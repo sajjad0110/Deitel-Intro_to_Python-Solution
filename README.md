@@ -1,2 +1,3 @@
 # Deitel-Intro_to_Python-Solution
 This is a solution of the exercises mentioned in the book 'Intro to Python' written by Paul J. Deitel &amp; Hervey M. Deitel. 
+"Intro to Python" is a very well-written book with a lot of detail discussions on each topics. This is, in my opinion, one of the best go-to books for them who wants to learn python. I started my python programming with this book but I was helpless because I couldn't find any solution of the exercises anywhere. I created this repository so that people can get help if they stuck in the middle of the program. This is my first repository and I believe in people's supports.
