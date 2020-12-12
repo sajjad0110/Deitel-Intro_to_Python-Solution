@@ -1,22 +1,24 @@
 # Palindrome
 # takes a five-digit number as input from the user and
 # show whether it's palindrome or not
-num = int(input('Enter a five digit integer: '))
-
-if num > 9999 and num < 100000:
-    firstDigit = num % 10
-    scndDigit = (num % 100) // 10
-    thrdDigit = (num % 1000) // 100  # Third digit
-    frthDigit = (num % 10000) // 1000    # Fourth Digit
-    fifDigit = (num % 100000) // 10000  # Fifth digit
-
-    if firstDigit == fifDigit:
-        if scndDigit == frthDigit:
-            print(str(num) + ' is a palindrome')
-        else:
-            print('Not palindrome.')
+number = int(input('Enter five digit number: '))
+p = 10000
+q = 10
+d = 1
+flag = 0
+if number > 9999 and number < 100000:
+    for i in range(2):
+        start = (number // p) % 10
+        last = (number % q) // d
+        if start == last:
+            flag = flag + 1
+        p = p / 10
+        q = q * 10
+        d = d * 10
+    if flag == 2:
+        print(f'{number} is a palindrome.')
     else:
-        print('Not palindrome')
-
+        print('Not palindrome.')
 else:
     print('Enter five-digit number. Exiting...')
+
